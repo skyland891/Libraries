@@ -2,7 +2,7 @@
 #include <stdarg.h>
 #include <math.h>
 #include <stdlib.h>
-#pragma warning(disable : 4244)//отключаю эти предупреждения потому что так задумано(числа double приводятся к int c потерей дробной части в некотрых случаях)
+#pragma warning(disable : 4244)//this warning is redundant and doesn't lead to program errors
 //additional functions(prototypes)
 int ParseIsNumber(const char sym);
 int ParseValuer(const char* str, int size, int i);
@@ -57,7 +57,7 @@ poly_t PolyParse(const char* str) {
 			else if (str[i] == '+') {
 				sign = 1;
 			}
-		} // проверка на знак
+		} // ГЇГ°Г®ГўГҐГ°ГЄГ  Г­Г  Г§Г­Г ГЄ
 
 		if (str[i] == 'x') {
 			size = 0;
